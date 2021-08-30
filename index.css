@@ -113,3 +113,6 @@ span {
 	margin-left: 0.25rem;
 	font-size: 0.9rem;
 }
+.centered {
+	text-align: center;
+}
