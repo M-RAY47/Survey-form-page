@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./index.css">
+		<link rel="shortcut icon" type="image/x-icon"href="./favico.ico">
+		<script type="text/javascript" src="./index.js"></script>
+		<title>Survey Form</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1 id="title">Learning Survey</h1>
+				<p id="description">This is a quick survey about learning how to code.</p>
+			</header>
+			<form id="survey-form" action="#">
+				<div class="form-group">
+					<label for="name" id="name-label"><i class="fa fa-name"></i>Name</label>
+					<input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+				</div>
+				<div class="form-group">
+					<label for="email" id="email-label"><i class="fa fa-email"></i>Email</label>
+					<input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+				</div>
+				<div class="form-group">
+					<label id="number-label" for="number">Age</label>
+					<input type="number" id="number" class="form-control" placeholder="10" min="10"  max="99" required>
+				</div>
+				<div class="form-group">
+					<p>What is your current level?</p>
+					<select id="dropdown" class="form-control">
+						<option disabled seclected value>Select current level</option>
+						<option type="radio" value="Guru" name="Guru">Guru</option>
+						<option type="radio" value="proffetional" name="Proffetional">Proffetional</option>
+						<option type="radio" value="senior" name="Senior">Senior</option>
+						<option type="radio" value="advance" name="Advance">Advance</option>
+						<option type="radio" value="junior" name="Junior">Junior</option>
+					</select>
+				</div>
+				<div>
+					<p>Are you naturally?<span>(which one are you)</span></p>
+					<label>
+						<input class="input-radio" value="lazy" type="radio" type="radio" name="user-nature" checked="">
+						Lazy
+					</label>
+					<label>
+						<input class="input-radio" value="motivated" type="radio" type="radio" name="user-nature" checked="">
+						Motivated
+					</label>
+					<label>
+						<input class="input-radio" value="diciplined" type="radio" type="radio" name="user-nature" checked="">
+						Self-Diciplined
+					</label>
+					<label>
+						<input class="input-radio" value="just-so-so" type="radio" type="radio" name="user-nature" checked="">
+						Just-So-So
+					</label>
+				</div>
+				<div class="form-group">
+					<p>Which Programming Language you would you like to master</p>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="prefer" value="programming-language" type="checkbox">
+						JavaScript
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="prefer" value="programming-language" type="checkbox">
+						Python
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="prefer" value="programming-language" type="checkbox">
+						Java
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="prefer" value="programming-language" type="checkbox">
+						Kotlin
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="prefer" value="programming-language" type="checkbox">
+						C/C++
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="prefer" value="programming-language" type="checkbox">
+						Ruby
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="prefer" value="programming-language" type="checkbox">
+						Flutter
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="prefer" value="programming-language" type="checkbox">
+						Go
+					</label>
+					<label>
+						<input class="input-checkbox" type="checkbox" name="prefer" value="programming-language" type="checkbox">
+						PHP
+					</label>
+				</div>
+				<div class="form-group">
+					<p>Tell us about your story</p>
+					<textarea id="comments" class="input-textarea" placeholder="Tell us about your story!!!"></textarea>
+				</div>
+				<div>
+					<button type="submit" id="submit" onclick="thanks()">submit</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
